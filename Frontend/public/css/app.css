@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+html{
+    width:100vw;
+    overflow-x: hidden;
+}
+body{
+    width:100%;
+    background-color: black;
+    overflow: hidden;
+}
+.root{
+    width:100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top:0.1px;
+}
+
+a{
+    text-decoration: none;
+}

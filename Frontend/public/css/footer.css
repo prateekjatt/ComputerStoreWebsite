@@ -1,0 +1,74 @@
+footer{
+    width:100%;
+    background-color: #6c7885;
+}
+
+.upperfooter{
+    background-color: #47515a;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.upperfooter div{
+    padding:10px;
+}
+
+.upperfooter ul{
+    color:white;
+    list-style-type:"> ";
+    font-size: 0.9rem;
+}
+
+.upperfooter li:first-child,.newsletter li:last-child,.upperfooter .company ul{
+    list-style: none;
+}
+.upperfooter li:not(:first-child){
+    margin-left:1.5rem;
+    cursor: pointer;
+}
+
+.upperfooter input{
+    font-size:0.9rem;
+    border-radius: 5px;
+    border: none;
+}
+.upperfooter input:focus{
+    outline: none;
+}
+
+.upperfooter input[type="text"]{
+    padding:8px 17px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width:75%;
+}
+.upperfooter input[type="submit"]{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: yellowgreen;
+    color: white;
+    border:2px solid white;
+    padding:6px 5px;
+    width:15%;
+}
+
+.upperfooter input[type="submit"]:hover{
+    background-color: rgb(130, 190, 10);
+    cursor: pointer;
+}
+.upperfooter input[type="submit"]:active{
+    background-color: rgb(91, 136, 0);
+}
+
+.upperfooter li{
+    margin:5px;
+    color:rgb(187, 187, 187);
+}
+
+.lowerfooter{
+    color:rgb(196, 196, 196);
+    padding:10px;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,106 @@
+@media screen and (max-width: 1100px){
+    .trending-text h1{
+        font-size: 1.5rem;
+    }
+    .topbrand-head h1{
+        font-size: 1.5rem;
+    }
+
+    .mid-nav li a{
+        font-size: 0.9rem;
+    }
+
+    .mid-nav .dropdown1 li{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 980px){
+    nav{
+        height:8vh;
+    }
+    .slidercontainer{
+        margin-top:8vh;
+    }
+    
+    .left-nav .brand-logo{
+        width: 45px;
+    }
+    .right-nav .user{
+        width: 30px;
+    }
+    
+    .text h4{
+        font-size: 0.9rem;
+    }
+    
+    .mid-nav li a{
+        font-size: 0.8rem;
+    }
+    
+    .mid-nav .dropdown1 li{
+        font-size: 0.8rem;
+    }
+    
+    .upperfooter input[type="text"]{
+        padding:8px 14px;
+    }
+    .upperfooter input[type="submit"]{
+        padding:6px 5px;
+        width:18%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .slidercontainer{
+        margin-top: 7vh;
+    }
+    
+    nav{
+        height:7vh;
+    }
+    
+    .text h4{
+        font-size: 0.7rem;
+    }
+    
+    .left-nav .brand-logo{
+        width: 40px;
+    }
+    .right-nav .user{
+        width: 25px;
+    }
+    
+    .left-nav{
+        justify-content: center;
+
+    }
+    .mid-nav{
+        display: none;
+    }
+    
+    .mob-nav{
+        display:block;
+    }
+    
+    .trending-text h1{
+        font-size: 1.3rem;
+    }
+    .topbrand-head h1{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width: 620px){
+    .upperfooter{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:380px){
+    .upperfooter input[type="submit"]{
+        padding:6px 5px;
+        width:23%;
+    }
+}

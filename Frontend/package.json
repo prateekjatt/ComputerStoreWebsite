@@ -1,0 +1,19 @@
+{
+  "name": "computerstorewebsite",
+  "version": "1.0.0",
+  "description": "First ReactJs website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prateek",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "babel-preset-react": "^6.24.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10"
+  }
+}
