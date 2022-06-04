@@ -40,13 +40,13 @@ export default function Imgslider(){
         <div className="slidercontainer">
             <div className="imgslider">
                 <div className="slide">
-                    <img src="res/images/slides/slide1.jpg"/>
+                    <img src="/res/images/slides/slide1.jpg"/>
                 </div>
                 <div className="slide">
-                    <img src="res/images/slides/slide2.jpg"/>
+                    <img src="/res/images/slides/slide2.jpg"/>
                 </div>
                 <div className="slide">
-                    <img src="res/images/slides/slide3.jpg"/>
+                    <img src="/res/images/slides/slide3.jpg"/>
                 </div>
 
 
@@ -57,7 +57,7 @@ export default function Imgslider(){
                 </div>
                 
                 <div className="refslide">
-                    <img src="res/images/slides/slide3.jpg"/>
+                    <img src="/res/images/slides/slide3.jpg"/>
                 </div>
             </div>
         </div>

@@ -42,9 +42,9 @@ export default function Header() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "nav-toggle"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "res/images/utils/navshow.png"
+    src: "/res/images/utils/navshow.png"
   }), /*#__PURE__*/React.createElement("img", {
-    src: "res/images/utils/navhide.png"
+    src: "/res/images/utils/navhide.png"
   })), /*#__PURE__*/React.createElement("div", {
     className: "nav-list"
   }, /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
@@ -78,7 +78,7 @@ export default function Header() {
   }, /*#__PURE__*/React.createElement("a", {
     href: "/index.html"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "res/images/utils/logo.png"
+    src: "/res/images/utils/logo.png"
   }))), /*#__PURE__*/React.createElement("div", {
     className: "text"
   }, /*#__PURE__*/React.createElement("a", {
@@ -110,7 +110,7 @@ export default function Header() {
   }, /*#__PURE__*/React.createElement("a", {
     href: "#"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "res/images/utils/login.png"
+    src: "/res/images/utils/login.png"
   }))), /*#__PURE__*/React.createElement("div", {
     className: "text"
   }, /*#__PURE__*/React.createElement("a", {

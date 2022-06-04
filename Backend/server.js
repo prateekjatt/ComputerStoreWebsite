@@ -3,7 +3,7 @@ const {MongoClient} = require('mongodb')
 const express = require('express');
 const app = express();
 const port = 80;
-const hostname = '192.168.128.74';
+const hostname = '192.168.43.168';
 let db;
 
 app.get('/',(req,res)=>{
@@ -17,11 +17,14 @@ app.get('/trending',async(req,res)=>{
     await cursor.forEach(element => {
         obj.push(element);
     });
-
     res.send(obj);
 });
 
 app.use(express.static(path.join(__dirname,'../Frontend/public')));
+
+app.use((req,res)=>{
+    res.sendFile(path.join(__dirname,'../Frontend/public/error.html'));
+});
 
 app.listen(port,hostname,()=>{
     console.log(`Server listening on ${hostname}:${port}`);

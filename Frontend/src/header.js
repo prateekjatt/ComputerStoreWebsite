@@ -50,8 +50,8 @@ export default function Header(){
       <nav>
         <div className="mob-nav">
           <div className="nav-toggle">
-            <img src="res/images/utils/navshow.png"/>
-            <img src="res/images/utils/navhide.png"/>
+            <img src="/res/images/utils/navshow.png"/>
+            <img src="/res/images/utils/navhide.png"/>
           </div>
           <div className="nav-list">
             <ul>
@@ -89,7 +89,7 @@ export default function Header(){
         <div className="left-nav">
               <div className="brand-logo">
                 <a href="/index.html">
-                  <img src="res/images/utils/logo.png"/>
+                  <img src="/res/images/utils/logo.png"/>
                 </a>
               </div>
               <div className="text">
@@ -137,7 +137,7 @@ export default function Header(){
         <div className="right-nav">
               <div className="user">
                 <a href="#">
-                    <img src="res/images/utils/login.png"/>
+                    <img src="/res/images/utils/login.png"/>
                 </a>
               </div>
               <div className="text">

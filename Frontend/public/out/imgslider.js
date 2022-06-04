@@ -39,15 +39,15 @@ export default function Imgslider() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "slide"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "res/images/slides/slide1.jpg"
+    src: "/res/images/slides/slide1.jpg"
   })), /*#__PURE__*/React.createElement("div", {
     className: "slide"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "res/images/slides/slide2.jpg"
+    src: "/res/images/slides/slide2.jpg"
   })), /*#__PURE__*/React.createElement("div", {
     className: "slide"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "res/images/slides/slide3.jpg"
+    src: "/res/images/slides/slide3.jpg"
   })), /*#__PURE__*/React.createElement("div", {
     className: "slidenav"
   }, /*#__PURE__*/React.createElement("div", {
@@ -59,6 +59,6 @@ export default function Imgslider() {
   })), /*#__PURE__*/React.createElement("div", {
     className: "refslide"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "res/images/slides/slide3.jpg"
+    src: "/res/images/slides/slide3.jpg"
   }))));
 }
