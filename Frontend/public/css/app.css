@@ -10,7 +10,6 @@ html{
 }
 body{
     width:100%;
-    background-color: black;
     overflow: hidden;
 }
 .root{
@@ -22,4 +21,49 @@ body{
 
 a{
     text-decoration: none;
+}
+
+
+
+@keyframes changeslide{
+    98%{
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    99%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+.container{
+    scrollbar-width: none;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.leftctrl{
+    background-image: url("../res/images/utils/leftarrow.png");
+}
+.rightctrl{
+   background-image: url("../res/images/utils/rightarrow.png");
+}
+
+
+.upperfooter ul{
+    list-style-type:"> ";
+}
+
+.upperfooter input[type="submit"]:hover{
+    background-color: rgb(130, 190, 10);
+    cursor: pointer;
+}
+.upperfooter input[type="submit"]:active{
+    background-color: rgb(91, 136, 0);
 }
