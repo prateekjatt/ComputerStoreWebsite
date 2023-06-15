@@ -71,46 +71,46 @@ function UserAuth(){
 
         <div className="content bg-white h-screen">
             
-            <div className="register hidden flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full">
+            <div className="register hidden flex-col items-center justify-center sm:w-2/3 w-full mx-auto bg-slate-100 shadow-2xl shadow-black h-full">
                 <div className="mb-7">
                     <p className="text-4xl">Sign Up</p>
                 </div>
-                <form className="my-7 flex flex-col text-lg w-full items-center" onSubmit={(e)=>signUp(e)}>
-                    <div className="flex flex-row justify-center w-2/4">
+                <form className="my-7 flex flex-col text-lg w-full max-w-md p-4 items-center" onSubmit={(e)=>signUp(e)}>
+                    <div className="flex flex-row justify-center">
                         <div className="mr-4 w-1/2">
                             <label className="block" name="firstname">First Name:</label>
                             <input name="firstname" className="firstname px-3 py-2 rounded-xl border-2 w-full" type="text" />
                         </div>
-                        <div className=" w-1/2">
+                        <div className="w-1/2 ">
                             <label className="block" name="lastname">Last Name:</label>
                             <input name="lastname" className="lastname  px-3 py-2 rounded-xl border-2 w-full" type="text" />
                         </div>
                     </div>
-                    <div className="w-5/12">
+                    <div className="w-10/12">
                         <label className="mt-4 block" name="email">Email:</label>
                         <input name="email" className="email px-3 py-2 rounded-xl border-2 w-full" type="text" />
                     </div>
-                    <div className="w-5/12">
+                    <div className="w-10/12">
                         <label className="mt-4  block" name="password">Password:</label>
                         <input name="password" className="password  px-3 py-2 rounded-xl border-2 w-full" type="password" />
                     </div>
-                    <div className="w-5/12">
+                    <div className="w-10/12">
                         <label className="mt-4  block" name="repassword">Re-Enter Password:</label>
                         <input name="repassword" className="repassword  px-3 py-2 rounded-xl border-2 w-full" type="password" />
                     </div>
 
-                    <input className="mt-5 cursor-pointer bg-green-500 rounded-xl px-3 py-2 text-white w-5/12" id="signup" type="submit" value="Sign Up"/>
+                    <input className="mt-5 cursor-pointer bg-green-500 rounded-xl px-3 py-2 text-white w-10/12" id="signup" type="submit" value="Sign Up"/>
                 </form>
                 <div>
                     <p className="text-base">Already Registered? <button className="text-blue-500" onClick={(e)=>btnSignIn(e)} id="btnsignin">Sign In</button></p>
                 </div>
             </div>
 
-            <div className="signin flex flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full">
+            <div className="signin flex flex-col items-center justify-center sm:w-2/3 w-full mx-auto bg-slate-100 shadow-2xl shadow-black h-full">
                 <div className="mb-7">
                     <p className="text-4xl">Sign In</p>
                 </div>
-                <form className="my-7 flex flex-col text-lg w-2/3 max-w-sm" onSubmit={(e)=>signIn(e)}>
+                <form className="my-7 flex flex-col text-lg w-full max-w-sm p-4" onSubmit={(e)=>signIn(e)}>
                     <label name="email">Email:</label>
                     <input name="email" className="email px-3 py-2 rounded-xl border-2" type="text" />
                     <label className="mt-4" name="password">Password:</label>

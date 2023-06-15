@@ -89,16 +89,16 @@ function UserAuth() {
   }) : /*#__PURE__*/React.createElement(React.Fragment, null), /*#__PURE__*/React.createElement("div", {
     className: "content bg-white h-screen"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "register hidden flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full"
+    className: "register hidden flex-col items-center justify-center sm:w-2/3 w-full mx-auto bg-slate-100 shadow-2xl shadow-black h-full"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mb-7"
   }, /*#__PURE__*/React.createElement("p", {
     className: "text-4xl"
   }, "Sign Up")), /*#__PURE__*/React.createElement("form", {
-    className: "my-7 flex flex-col text-lg w-full items-center",
+    className: "my-7 flex flex-col text-lg w-full max-w-md p-4 items-center",
     onSubmit: e => signUp(e)
   }, /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-row justify-center w-2/4"
+    className: "flex flex-row justify-center"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mr-4 w-1/2"
   }, /*#__PURE__*/React.createElement("label", {
@@ -109,7 +109,7 @@ function UserAuth() {
     className: "firstname px-3 py-2 rounded-xl border-2 w-full",
     type: "text"
   })), /*#__PURE__*/React.createElement("div", {
-    className: " w-1/2"
+    className: "w-1/2 "
   }, /*#__PURE__*/React.createElement("label", {
     className: "block",
     name: "lastname"
@@ -118,7 +118,7 @@ function UserAuth() {
     className: "lastname  px-3 py-2 rounded-xl border-2 w-full",
     type: "text"
   }))), /*#__PURE__*/React.createElement("div", {
-    className: "w-5/12"
+    className: "w-10/12"
   }, /*#__PURE__*/React.createElement("label", {
     className: "mt-4 block",
     name: "email"
@@ -127,7 +127,7 @@ function UserAuth() {
     className: "email px-3 py-2 rounded-xl border-2 w-full",
     type: "text"
   })), /*#__PURE__*/React.createElement("div", {
-    className: "w-5/12"
+    className: "w-10/12"
   }, /*#__PURE__*/React.createElement("label", {
     className: "mt-4  block",
     name: "password"
@@ -136,7 +136,7 @@ function UserAuth() {
     className: "password  px-3 py-2 rounded-xl border-2 w-full",
     type: "password"
   })), /*#__PURE__*/React.createElement("div", {
-    className: "w-5/12"
+    className: "w-10/12"
   }, /*#__PURE__*/React.createElement("label", {
     className: "mt-4  block",
     name: "repassword"
@@ -145,7 +145,7 @@ function UserAuth() {
     className: "repassword  px-3 py-2 rounded-xl border-2 w-full",
     type: "password"
   })), /*#__PURE__*/React.createElement("input", {
-    className: "mt-5 cursor-pointer bg-green-500 rounded-xl px-3 py-2 text-white w-5/12",
+    className: "mt-5 cursor-pointer bg-green-500 rounded-xl px-3 py-2 text-white w-10/12",
     id: "signup",
     type: "submit",
     value: "Sign Up"
@@ -156,13 +156,13 @@ function UserAuth() {
     onClick: e => btnSignIn(e),
     id: "btnsignin"
   }, "Sign In")))), /*#__PURE__*/React.createElement("div", {
-    className: "signin flex flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full"
+    className: "signin flex flex-col items-center justify-center sm:w-2/3 w-full mx-auto bg-slate-100 shadow-2xl shadow-black h-full"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mb-7"
   }, /*#__PURE__*/React.createElement("p", {
     className: "text-4xl"
   }, "Sign In")), /*#__PURE__*/React.createElement("form", {
-    className: "my-7 flex flex-col text-lg w-2/3 max-w-sm",
+    className: "my-7 flex flex-col text-lg w-full max-w-sm p-4",
     onSubmit: e => signIn(e)
   }, /*#__PURE__*/React.createElement("label", {
     name: "email"
