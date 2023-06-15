@@ -15,7 +15,7 @@ export default function Topbrand() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "topbrand-head"
   }, /*#__PURE__*/React.createElement("h1", {
-    className: "text-[2rem] tracking-[0.5rem]"
+    className: "sm:text-4xl text-2xl tracking-[0.5rem]"
   }, "Top Brands")), /*#__PURE__*/React.createElement("hr", {
     className: "divider"
   }), /*#__PURE__*/React.createElement("div", {
@@ -25,7 +25,7 @@ export default function Topbrand() {
   }), /*#__PURE__*/React.createElement("button", {
     className: "rightctrl absolute right-[3%] -translate-y-1/2 bg-contain bg-center bg-no-repeat top-1/2 bg-white border-none rounded-2xl h-[30px] w-[30px] p-2 shadow-lg shadow-black z-[9]"
   }), /*#__PURE__*/React.createElement("div", {
-    className: "container relative h-48 overflow-x-scroll m-auto scroll-smooth"
+    className: "container relative h-48 overflow-x-scroll mx-auto overflow-hidden scroll-smooth"
   }, /*#__PURE__*/React.createElement("div", {
     className: "brandcontainer flex absolute top-0 left-0 justify-between items-center m-4"
   }, /*#__PURE__*/React.createElement("div", {

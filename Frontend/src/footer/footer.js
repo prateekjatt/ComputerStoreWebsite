@@ -4,14 +4,14 @@ export default function Footer(){
 
     return (
         <footer className="w-full bg-gray-500">
-            <div className="upperfooter text-white bg-gray-600 p-5 flex justify-between items-start">
-                <div className="company p-2">
+            <div className="upperfooter text-white bg-gray-600 p-5 sm:flex-row flex flex-col justify-between items-start">
+                <div className="company p-2 m-4">
                     <ul className="ul1">
-                        <li className="ml-0 list-none text-base"><h2>COMPUTER STORE</h2></li>
+                        <li className="ml-0 list-none text-base cursor-pointer"><h2>COMPUTER STORE</h2></li>
                         <li className="list-none ml-6 cursor-pointer"><p className="text-sm">INDIA</p></li>
                     </ul>
                 </div>
-                <div className="info">
+                <div className="info m-4">
                     <ul className="ul2">
                         <li className="ml-0 list-none text-base"><h2>INFORMATION</h2></li>
                         <li className="ml-6 cursor-pointer"><p className="text-sm">Sitemap</p></li>
@@ -19,7 +19,7 @@ export default function Footer(){
                         <li className="ml-6 cursor-pointer"><p className="text-sm">Cancellation & Refund</p></li>
                     </ul>
                 </div>
-                <div className="newsletter">
+                <div className="newsletter m-4">
                     <ul className="ul3">
                         <li className="ml-0 list-none text-base"><h2>NEWSLETTER</h2></li>
                         <li className="ml-6 cursor-pointer"><p className="text-sm">Stay up to date with news and promotions.</p></li>

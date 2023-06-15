@@ -74,5 +74,11 @@ exports.getWishlist = async(user)=>{
     let res = await wishlists.findOne({email:user.email})
     
     console.log(`Wishlist of ${user.email}`)
-    return res
+
+    let wishlist = []
+    for(const doc of res.items){
+        wishlist.push(await products.findOne({ID:doc}))
+    }
+
+    return wishlist
 }

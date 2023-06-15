@@ -12,11 +12,11 @@ export default function MidNav() {
     }
   });
   return /*#__PURE__*/React.createElement("div", {
-    className: "mid-nav h-full grow text-white"
+    className: "mid-nav md:text-base text-sm sm:block hidden h-full grow text-white"
   }, /*#__PURE__*/React.createElement("ul", {
     className: "flex flex-row items-center h-full w-full justify-center"
   }, /*#__PURE__*/React.createElement("li", {
-    className: "cursor-pointer border-r border-solid leading-10 border-white px-5 relative hover:bg-gray-800 h-full"
+    className: "cursor-pointer border-r border-solid leading-10 border-white md:px-5 px-2 relative hover:bg-gray-800 h-full"
   }, /*#__PURE__*/React.createElement("a", {
     href: "#"
   }, "PC Components"), /*#__PURE__*/React.createElement("ul", {
@@ -32,7 +32,7 @@ export default function MidNav() {
   }, "Graphics Card"), /*#__PURE__*/React.createElement("li", {
     className: "px-5 py-3 hover:bg-gray-800 h-full"
   }, "Monitor"))), /*#__PURE__*/React.createElement("li", {
-    className: "cursor-pointer hover:bg-gray-800 leading-10 h-full border-r border-solid border-white px-5 relative"
+    className: "cursor-pointer hover:bg-gray-800 leading-10 h-full border-r border-solid border-white md:px-5 px-2 relative"
   }, /*#__PURE__*/React.createElement("a", {
     href: "#"
   }, "Accessories"), /*#__PURE__*/React.createElement("ul", {
@@ -46,7 +46,7 @@ export default function MidNav() {
   }, "Webcams"), /*#__PURE__*/React.createElement("li", {
     className: "px-5 py-3 hover:bg-gray-800 h-full"
   }, "Headset"))), /*#__PURE__*/React.createElement("li", {
-    className: "cursor-pointer px-5 relative leading-10 hover:bg-gray-800 h-full"
+    className: "cursor-pointer md:px-5 px-2 relative leading-10 hover:bg-gray-800 h-full"
   }, /*#__PURE__*/React.createElement("a", {
     href: "#"
   }, "Brands"), /*#__PURE__*/React.createElement("ul", {

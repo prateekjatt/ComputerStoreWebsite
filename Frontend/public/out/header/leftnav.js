@@ -1,8 +1,8 @@
 export default function LeftNav() {
   return /*#__PURE__*/React.createElement("div", {
-    className: "left-nav flex flex-row justify-start items-center grow h-full"
+    className: "left-nav md:text-base text-sm sm:justify-start flex flex-row justify-center items-center grow h-full"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "brand-logo p-1 h-full"
+    className: "brand-logo p-1 md:h-11 h-9"
   }, /*#__PURE__*/React.createElement("a", {
     className: "h-full",
     href: "/index.html"

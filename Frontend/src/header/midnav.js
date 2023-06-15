@@ -16,9 +16,9 @@ export default function MidNav(){
     })
 
     return (
-        <div className="mid-nav h-full grow text-white">
+        <div className="mid-nav md:text-base text-sm sm:block hidden h-full grow text-white">
             <ul className="flex flex-row items-center h-full w-full justify-center">
-              <li className="cursor-pointer border-r border-solid leading-10 border-white px-5 relative hover:bg-gray-800 h-full">
+              <li className="cursor-pointer border-r border-solid leading-10 border-white md:px-5 px-2 relative hover:bg-gray-800 h-full">
                 <a href="#">PC Components</a>
                 <ul className="dropdown1 bg-black absolute top-full left-0 w-full list-none hidden text-center">
                   <li className="px-5 py-3 hover:bg-gray-800 h-full">Motherboard</li>
@@ -28,7 +28,7 @@ export default function MidNav(){
                   <li className="px-5 py-3 hover:bg-gray-800 h-full">Monitor</li>
                 </ul>
               </li>
-              <li className="cursor-pointer hover:bg-gray-800 leading-10 h-full border-r border-solid border-white px-5 relative">
+              <li className="cursor-pointer hover:bg-gray-800 leading-10 h-full border-r border-solid border-white md:px-5 px-2 relative">
                 <a href="#">Accessories</a>
                 <ul className="dropdown1  bg-black absolute top-full left-0 w-full list-none hidden text-center">
                   <li className="px-5 py-3 hover:bg-gray-800 h-full">Keyboard</li>
@@ -37,7 +37,7 @@ export default function MidNav(){
                   <li className="px-5 py-3 hover:bg-gray-800 h-full">Headset</li>
                 </ul>
               </li>
-              <li className="cursor-pointer px-5 relative leading-10 hover:bg-gray-800 h-full">
+              <li className="cursor-pointer md:px-5 px-2 relative leading-10 hover:bg-gray-800 h-full">
                 <a href="#">Brands</a>
                 <ul className="dropdown1  bg-black absolute top-full left-0 w-full list-none hidden text-center">
                   <li className="px-5 py-3 hover:bg-gray-800 h-full">AMD</li>

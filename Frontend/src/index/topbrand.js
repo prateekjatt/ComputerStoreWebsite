@@ -16,12 +16,12 @@ export default function Topbrand(){
 
     return (
         <div className="topbrand w-screen bg-white p-5 text-center text-black">
-            <div className="topbrand-head"><h1 className="text-[2rem] tracking-[0.5rem]">Top Brands</h1></div>
+            <div className="topbrand-head"><h1 className="sm:text-4xl text-2xl tracking-[0.5rem]">Top Brands</h1></div>
             <hr className="divider"/>
             <div className="outercontainer relative">
                 <button className="leftctrl absolute left-[3%] -translate-y-1/2 bg-contain bg-center bg-no-repeat top-1/2 bg-white border-none rounded-2xl h-[30px] w-[30px] p-2 shadow-lg shadow-black z-[9]"></button>
                 <button className="rightctrl absolute right-[3%] -translate-y-1/2 bg-contain bg-center bg-no-repeat top-1/2 bg-white border-none rounded-2xl h-[30px] w-[30px] p-2 shadow-lg shadow-black z-[9]"></button>
-                <div className="container relative h-48 overflow-x-scroll m-auto scroll-smooth">
+                <div className="container relative h-48 overflow-x-scroll mx-auto overflow-hidden scroll-smooth">
                     <div className="brandcontainer flex absolute top-0 left-0 justify-between items-center m-4">
                         <div className="brand inline-block w-36 h-36 mx-2 my-0 bg-green-700"><img src="/res/images/brands/brand1.jpg"/></div>   
                         <div className="brand inline-block w-36 h-36 mx-2 my-0 bg-green-700"><img src="/res/images/brands/brand3.jpg"/></div>   

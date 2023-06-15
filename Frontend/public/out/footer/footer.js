@@ -3,19 +3,19 @@ export default function Footer() {
   return /*#__PURE__*/React.createElement("footer", {
     className: "w-full bg-gray-500"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "upperfooter text-white bg-gray-600 p-5 flex justify-between items-start"
+    className: "upperfooter text-white bg-gray-600 p-5 sm:flex-row flex flex-col justify-between items-start"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "company p-2"
+    className: "company p-2 m-4"
   }, /*#__PURE__*/React.createElement("ul", {
     className: "ul1"
   }, /*#__PURE__*/React.createElement("li", {
-    className: "ml-0 list-none text-base"
+    className: "ml-0 list-none text-base cursor-pointer"
   }, /*#__PURE__*/React.createElement("h2", null, "COMPUTER STORE")), /*#__PURE__*/React.createElement("li", {
     className: "list-none ml-6 cursor-pointer"
   }, /*#__PURE__*/React.createElement("p", {
     className: "text-sm"
   }, "INDIA")))), /*#__PURE__*/React.createElement("div", {
-    className: "info"
+    className: "info m-4"
   }, /*#__PURE__*/React.createElement("ul", {
     className: "ul2"
   }, /*#__PURE__*/React.createElement("li", {
@@ -33,7 +33,7 @@ export default function Footer() {
   }, /*#__PURE__*/React.createElement("p", {
     className: "text-sm"
   }, "Cancellation & Refund")))), /*#__PURE__*/React.createElement("div", {
-    className: "newsletter"
+    className: "newsletter m-4"
   }, /*#__PURE__*/React.createElement("ul", {
     className: "ul3"
   }, /*#__PURE__*/React.createElement("li", {

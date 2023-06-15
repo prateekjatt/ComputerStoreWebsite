@@ -28,14 +28,14 @@ export default function SideNav() {
     }
   });
   return /*#__PURE__*/React.createElement("div", {
-    className: "mob-nav flex md:hidden grow h-full"
+    className: "mob-nav text-sm sm:hidden grow h-full"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "nav-toggle relative h-full"
+    className: "nav-toggle relative md:h-10 h-9 p-2"
   }, /*#__PURE__*/React.createElement("img", {
-    className: " w-10 h-full filter invert absolute left-0 top-0",
+    className: "h-full filter invert left-0 top-0",
     src: "/res/images/utils/navshow.png"
   }), /*#__PURE__*/React.createElement("img", {
-    className: "w-10 h-full filter invert absolute left-0 top-0 hidden",
+    className: "h-full filter invert left-0 top-0 hidden",
     src: "/res/images/utils/navhide.png"
   })), /*#__PURE__*/React.createElement("div", {
     className: "nav-list text-white absolute left-0 top-full bg-gray-500 w-screen h-screen -translate-x-full transition-all duration-1000 overflow-x-hidden overflow-y-scroll"

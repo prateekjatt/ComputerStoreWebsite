@@ -35,10 +35,10 @@ export default function SideNav(){
   });
 
     return (
-      <div className="mob-nav flex md:hidden grow h-full">
-        <div className="nav-toggle relative h-full">
-          <img className=" w-10 h-full filter invert absolute left-0 top-0" src="/res/images/utils/navshow.png"/>
-          <img className="w-10 h-full filter invert absolute left-0 top-0 hidden" src="/res/images/utils/navhide.png"/>
+      <div className="mob-nav text-sm sm:hidden grow h-full">
+        <div className="nav-toggle relative md:h-10 h-9 p-2">
+          <img className="h-full filter invert left-0 top-0" src="/res/images/utils/navshow.png"/>
+          <img className="h-full filter invert left-0 top-0 hidden" src="/res/images/utils/navhide.png"/>
         </div>
         <div className="nav-list text-white absolute left-0 top-full bg-gray-500 w-screen h-screen -translate-x-full transition-all duration-1000 overflow-x-hidden overflow-y-scroll">
           <ul className="w-full mt-4 list-disc relative">

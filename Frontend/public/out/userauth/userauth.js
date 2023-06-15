@@ -1,8 +1,16 @@
 import Header from "../header/header.js";
+import Modal from "../modal/modal.js";
+const {
+  useState
+} = React;
 
 function UserAuth() {
+  const [modal, setmodal] = useState({});
+  const [showmodal, setshowmodal] = useState(0);
+
   async function signIn(e) {
     e.preventDefault();
+    let modal = document.querySelector('.modal');
     let email = document.querySelector('.signin  .email').value;
     let password = document.querySelector('.signin  .password').value;
     let data = {
@@ -17,19 +25,26 @@ function UserAuth() {
       body: JSON.stringify(data)
     });
     res = await res.json();
+    setmodal({
+      success: res.success,
+      msg: res.msg
+    });
+    setshowmodal(1);
 
     if (res.success) {
       localStorage.setItem('name', res.name);
       localStorage.setItem('email', res.email);
-      window.location.href = '/index.html';
-    } else {
-      alert(res.msg);
+      setTimeout(() => {
+        window.location.href = '/index.html';
+      }, 2000);
     }
   }
 
   async function signUp(e) {
     e.preventDefault();
-    let name = document.querySelector('.register .firstname').value + ' ' + document.querySelector('.register .lastname').value;
+    let name = document.querySelector('.register .firstname').value;
+    let lastname = document.querySelector('.register .lastname').value;
+    if (lastname) name = name + ' ' + lastname;
     let email = document.querySelector('.register  .email').value;
     let password = document.querySelector('.register  .password').value;
     let res = await fetch('/user/signUp', {
@@ -44,11 +59,16 @@ function UserAuth() {
       })
     });
     res = await res.json();
+    setmodal({
+      success: res.success,
+      msg: res.msg
+    });
+    setshowmodal(1);
 
     if (res.success) {
-      window.location.href = '/userauth.html';
-    } else {
-      alert(res.msg);
+      setTimeout(() => {
+        window.location.href = '/userauth.html';
+      }, 2000);
     }
   }
 
@@ -62,14 +82,14 @@ function UserAuth() {
     document.querySelector('.signin').style.display = 'flex';
   }
 
-  React.useEffect(() => {
-    let divregister = document.querySelector('.register');
-    divregister.style.display = 'none';
-  });
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Header, null), /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Header, null), showmodal ? /*#__PURE__*/React.createElement(Modal, {
+    success: modal.success,
+    onclick: setshowmodal,
+    msg: modal.msg
+  }) : /*#__PURE__*/React.createElement(React.Fragment, null), /*#__PURE__*/React.createElement("div", {
     className: "content bg-white h-screen"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "register flex flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full"
+    className: "register hidden flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mb-7"
   }, /*#__PURE__*/React.createElement("p", {

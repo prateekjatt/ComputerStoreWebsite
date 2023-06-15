@@ -39,7 +39,7 @@ router.get('/wishlist/getWishlist',async(req,res)=>{
     }
     else{
         let result = await getWishlist({email:req.session.email})
-        res.send({wishlist:result})
+        res.send({success:true,wishlist:result})
     }
 });
 
@@ -74,6 +74,12 @@ router.post('/user/signUp',async(req,res)=>{
         res.send({success:false,msg:"Email Already Exists!"})
         return;
     }
+
+    if(req.body.email.length<10 || req.body.name.length<3 || req.body.password<4) {
+        res.send({success:false,msg:"Enter Valid Information!"})
+        return
+    }
+
     let salt = await bcrypt.genSalt(10)
     let hash = await bcrypt.hash(req.body.password,salt)
     

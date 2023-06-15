@@ -1,10 +1,17 @@
 import Header from "../header/header.js";
+import Modal from "../modal/modal.js";
 
+const {useState} = React
 
 function UserAuth(){
 
+    const [modal,setmodal] = useState({})
+    const [showmodal,setshowmodal] = useState(0)
+
+
     async function signIn(e){
         e.preventDefault();
+        let modal = document.querySelector('.modal')
         let email = document.querySelector('.signin  .email').value
         let password = document.querySelector('.signin  .password').value
 
@@ -13,32 +20,36 @@ function UserAuth(){
                     headers:{'Content-Type': 'application/json'},
                     body:JSON.stringify(data)})
         res = await res.json()
+
+        setmodal({success:res.success,msg:res.msg})
+        setshowmodal(1)
+        
         if(res.success){
             localStorage.setItem('name',res.name)
             localStorage.setItem('email',res.email)
-            window.location.href = '/index.html'
+            setTimeout(()=>{window.location.href = '/index.html'},2000)
         }
-        else{
-            alert(res.msg);
-        }
-
     }
-
+    
     async function signUp(e){
         e.preventDefault();
-        let name = document.querySelector('.register .firstname').value+' '+document.querySelector('.register .lastname').value
+        let name = document.querySelector('.register .firstname').value
+        let lastname = document.querySelector('.register .lastname').value
+        if(lastname) name = name + ' ' + lastname
+
         let email = document.querySelector('.register  .email').value
         let password = document.querySelector('.register  .password').value
         let res = await fetch('/user/signUp',{method:"POST",
-                                        headers:{'Content-Type': 'application/json'},
-                                        body:JSON.stringify({name:name,email:email,password:password})})
-
+        headers:{'Content-Type': 'application/json'},
+        body:JSON.stringify({name:name,email:email,password:password})})
+        
         res = await res.json()
+        
+        setmodal({success:res.success,msg:res.msg})
+        setshowmodal(1)
+        
         if(res.success){
-            window.location.href = '/userauth.html'
-        }
-        else{
-            alert(res.msg);
+            setTimeout(()=>{window.location.href = '/userauth.html'},2000)
         }
     }
 
@@ -52,17 +63,15 @@ function UserAuth(){
         document.querySelector('.signin').style.display = 'flex';
     }
 
-    React.useEffect(()=>{
-        let divregister = document.querySelector('.register');
-        divregister.style.display = 'none';
-    });
-
     return (
     <>
         <Header/>
+        
+        {showmodal? <Modal success={modal.success} onclick={setshowmodal} msg={modal.msg}/>:<></>}
+
         <div className="content bg-white h-screen">
             
-            <div className="register flex flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full">
+            <div className="register hidden flex-col items-center justify-center w-2/3 mx-auto bg-slate-100 shadow-2xl shadow-black h-full">
                 <div className="mb-7">
                     <p className="text-4xl">Sign Up</p>
                 </div>
