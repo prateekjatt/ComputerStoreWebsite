@@ -38,14 +38,14 @@ export default function Card(props){
             <div className="absolute top-1 left-1 w-10 h-10">
                 <img onClick={wishlistbtn.fun} src={wishlistbtn.src}/>
             </div>
-            <div className="cardimg w-full h-1/2 p-3">
+            <div className="cardimg w-full h-1/2 p-3" onClick={()=>{window.location.href = `/product/${props.ID}`}}>
                 <img className=" max-h-full max-w-full m-auto" src={props.image}/>
             </div>
             <hr className="divider border border-solid border-red-400 my-[1px] mx-auto w-full"></hr>
-            <div className="cardhead p-2 w-full h-1/3 overflow-hidden">
+            <div className="cardhead p-2 w-full h-1/3 overflow-hidden" onClick={()=>{window.location.href = `/product/${props.ID}`}}>
                 <p className="text-black font-bold text-left text-[1rem]">{props.itemname}</p>
             </div>
-            <div className="cardprice table w-full h-1/6 p-3 overflow-hidden">
+            <div className="cardprice table w-full h-1/6 p-3 overflow-hidden" onClick={()=>{window.location.href = `/product/${props.ID}`}}>
                 <p className="table-cell align-middle h-full text-black text-left text-[0.9rem] font-semibold">&#8377; {props.price}</p>
             </div>
         </div>

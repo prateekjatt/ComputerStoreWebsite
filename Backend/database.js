@@ -20,10 +20,6 @@ exports.connectDB = async()=>{
     .catch(e => console.log('Unable to connect to MongoDB!'))
 }
 
-function isConnected(){
-    return (db==null? false:true);
-}
-
 exports.getTrends = async()=>{
 
     let res = await products.distinct("category")
@@ -50,6 +46,12 @@ exports.addUser = async(user)=>{
         return true
     }
     return false
+}
+
+
+exports.getItem = async(itemId)=>{
+    let res = await products.findOne({ID:itemId})
+    return res
 }
 
 exports.addItem = async(user,itemId)=>{

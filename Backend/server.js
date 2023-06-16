@@ -7,9 +7,12 @@ const hostname = '127.0.0.1';
 
 const {getTrends,connectDB} = require('./database.js')
 const {userRouter} = require('./user.js')
+const {productRouter} = require('./product.js')
+
 
 connectDB()
 
+app.set('view engine','ejs')
 
 app.use(express.urlencoded({ extended: false }))
 app.use(session({
@@ -29,6 +32,7 @@ app.get('/',(req,res)=>{
 
 
 app.use(userRouter)
+app.use(productRouter)
 
 
 app.get('/trends',async(req,res)=>{

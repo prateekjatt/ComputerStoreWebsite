@@ -21,12 +21,18 @@ export default function Card(props) {
     id: props.ID,
     className: "flex flex-row w-full h-28 m-2 justify-start border-2 border-black  bg-white text-black rounded-md cursor-pointer hover:shadow-xl "
   }, /*#__PURE__*/React.createElement("div", {
-    className: "cardimg w-[25%] h-full p-3 flex items-center"
+    className: "cardimg w-[25%] h-full p-3 flex items-center",
+    onClick: () => {
+      window.location.href = `/product/${props.ID}`;
+    }
   }, /*#__PURE__*/React.createElement("img", {
     className: "m-auto max-h-full max-w-full",
     src: props.img
   })), /*#__PURE__*/React.createElement("div", {
-    className: "cardhead flex flex-col w-[65%] p-2 h-full overflow-hidden"
+    className: "cardhead flex flex-col w-[65%] p-2 h-full overflow-hidden",
+    onClick: () => {
+      window.location.href = `/product/${props.ID}`;
+    }
   }, /*#__PURE__*/React.createElement("p", {
     className: "table-cell align-middle text-black font-bold text-left text-[1rem]"
   }, props.item), /*#__PURE__*/React.createElement("p", {
