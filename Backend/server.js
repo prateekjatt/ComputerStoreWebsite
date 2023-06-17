@@ -3,7 +3,7 @@ const express = require('express');
 const session = require('express-session')
 const app = express();
 const port = 80;
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.0';
 
 const {getTrends,connectDB} = require('./database.js')
 const {userRouter} = require('./user.js')
