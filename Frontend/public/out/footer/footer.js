@@ -54,5 +54,5 @@ export default function Footer() {
     value: "Send"
   }))))), /*#__PURE__*/React.createElement("div", {
     className: "lowerfooter text-white p-[10px] text-[0.8rem]"
-  }, /*#__PURE__*/React.createElement("p", null, "Copyright \xA9 ", year, ", Computer Store, All Rights Reserved.")));
+  }, /*#__PURE__*/React.createElement("p", null, "Copyright \xA9 ", year, ", Computer Store Website, Created By Prateek Kumar, All Rights Reserved.")));
 }

@@ -28,7 +28,7 @@ export default function Footer(){
                 </div>
             </div>
             <div className="lowerfooter text-white p-[10px] text-[0.8rem]">
-                <p>Copyright © {year}, Computer Store, All Rights Reserved.</p>
+                <p>Copyright © {year}, Computer Store Website, Created By Prateek Kumar, All Rights Reserved.</p>
             </div>
         </footer>
     );
